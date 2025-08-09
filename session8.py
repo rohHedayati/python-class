@@ -87,8 +87,30 @@
 # 8
 # 9
 # msg = 'hello' + str(10) -> '10'
-for i in range(1,10):
-    row = ''
-    for j in range(1,10):
-        row += str(i*j) + '    '
-    print(row)
+# for i in range(1,10):
+#     row = ''
+#     for j in range(1,10):
+#         row += str(i*j) + '\t'
+#     print(row)
+
+# 4
+#    *
+#   ***
+#  *****
+# *******
+# print('hello_'*5)
+n = int(input("Enter n:"))
+j = 1
+for i in range(1,n+1):
+    stars = '*' * j
+    spaces = ' ' * (n-i)
+    print(spaces + stars)
+    j += 2
+
+
+j = 2*n-1
+for i in range(n):
+    stars = '*' * j
+    spaces = ' ' * i
+    print(spaces + stars)
+    j -= 2
