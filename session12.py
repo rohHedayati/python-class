@@ -63,4 +63,12 @@ numbers = []
 for i in range(20):
     x = random.randint(1,10)
     numbers.append(x)
+
+x = int(input("Enter a number:"))
+# c = 0
+# for y in numbers:
+#     if x == y :
+#         c += 1
+c = numbers.count(x)
 print(numbers)
+print(f"{x} repeated {c} times")
