@@ -100,12 +100,34 @@ def guess_number():
 
     # if not is_correct:
 
-def sum_of_digits(num, type):
-    pass
+def sum_of_digits(num, type='all'):
+    if type == 'all':
+        sum_digit(num)
+    elif type == 'even':
+        s = 0
+        n = num
+        while num != 0:
+            r = num % 10
+            if r % 2 == 0:
+                s += r
+            num = num // 10
+        print(f"Sum of {n} digits = {s}")
+    elif type == 'odd':
+        s = 0
+        n = num
+        while num != 0:
+            r = num % 10
+            if r % 2 == 1:
+                s += r
+            num = num // 10
+        print(f"Sum of {n} digits = {s}")
+    else:
+        print("Wrong type!")
 
-sum_of_digits(1456, 'all')
+sum_of_digits(1456)
 sum_of_digits(1456, 'even')
 sum_of_digits(1456, 'odd')
+sum_of_digits(1456, 'oddgdf')
 while True:
     print("==============================================")
     x = menu()
