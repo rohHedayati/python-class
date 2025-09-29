@@ -1,9 +1,6 @@
 balance = 0
 transactions = []
-# salary
-# 150000000
-# 14040631
-# 
+
 def income():
     global transactions
     global balance
