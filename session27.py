@@ -6,16 +6,21 @@ class Person:
 
     def __init__(self, n):
         self.name = n
+        self.created = True
+
+    def __str__(self):
+        return f"Person: {self.name} is created!"
 
     def speak(self):
         print(f"hello my name is {self.name}")
 
 person1 = Person("Soheil")
-person2 = Person("Yasin")
-person3 = Person("Erfan")
-print(person1.speak())
-print(person2.speak())
-print(person3.speak())
+print(person1)
+# person2 = Person("Yasin")
+# person3 = Person("Erfan")
+# print(person1.speak())
+# print(person2.speak())
+# print(person3.speak())
 
 def menu():
     print("Enter 1: To insert information")
